@@ -4,8 +4,7 @@ motion controller with feedback system(Circuit + Code + Algorithm )
 -----------------------------------------------
 
 # Algorithm 
-
-Start 
+- Start 
 
 Step1:
 
