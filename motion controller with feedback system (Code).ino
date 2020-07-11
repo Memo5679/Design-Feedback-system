@@ -1,8 +1,8 @@
 #include<math.h>
 #include <Servo.h>
 
-int pos;
-int signalPin = 0;
+int M;
+int Pin = 0;
 
 Servo servo_9;
 
@@ -14,11 +14,11 @@ void setup()
 
 void loop()
 {
-  pos = analogRead(signalPin);
-  pos = map(pos, 0, 1023, 0, 180);
-  Serial.print(pos);
+  M = analogRead(Pin);
+  M = map(M, 0, 1023, 0, 180);
+  Serial.print(M);
   Serial.print(" , ");
-  servo_9.write(pos);
+  servo_9.write(M);
   delay(2000);
 }
 
